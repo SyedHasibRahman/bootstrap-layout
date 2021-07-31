@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Learning!</title>
+    <style>
+        h3::before {
+            content: 'Hello';
+            color: lime;
+        }
+
+        h3::after {
+            content: ' Gello';
+            color: magenta;
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: magenta;
+            font-size: 3rem;
+
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: magenta;
+            font-size: 3rem;
+
+        }
+
+
+        .section-title h1 {
+            display: inline-block;
+        }
+
+        .section-title h1::after {
+            content: '';
+            display: block;
+            background: magenta;
+            height: 2px;
+            width: 100%;
+        }
+
+        .section-title h1::before {
+            content: '';
+            display: block;
+            background: none;
+            height: 2px;
+            width: 100%;
+        }
+
+        .section-title h1:hover:before {
+            content: '';
+            display: block;
+            background: magenta;
+            height: 2px;
+            width: 100%;
+        }
+
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Learning Pseudo with fun</h3>
+    <section class="section-title">
+        <h1>Best Quote</h1>
+        <h2>
+            <blockquote>
+                Patience, persistence and perspiration make an unbeatable combination for success.
+            </blockquote>
+        </h2>
+        <label class="required">Name:</label>
+        <input type="text">
+
+    </section>
+
+
+
+</body>
+
+</html>
